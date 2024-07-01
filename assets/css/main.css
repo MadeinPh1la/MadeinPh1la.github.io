@@ -2363,7 +2363,7 @@ input, select, textarea {
 					bottom: -2.75em;
 					margin-left: -1em;
 					width: 2em;
-					height: 2em;
+					height: 0.5em;
 					border-radius: 100%;
 					border: solid 2px rgba(255, 255, 255, 0.25);
 				}
@@ -2390,10 +2390,13 @@ input, select, textarea {
 
 		.image.phone {
 			box-shadow: none;
+
 		}
 
 			.image.phone .inner, .image.phone:before, .image.phone:after {
 				border-color: #e6e6e6;
+                background: black;
+
 			}
 
 			.image.phone .inner:before {
@@ -2490,6 +2493,22 @@ input, select, textarea {
 			ul.actions.special li:first-child {
 				padding-left: 0;
 			}
+
+        ul.actions.right {
+            -moz-justify-content: right;
+            -webkit-justify-content: right;
+            -ms-justify-content: right;
+            justify-content: right;
+            width: 100%;
+            margin-left: 0;
+        }
+
+            ul.actions.right li:first-child {
+                padding-left: 0;
+            }
+
+
+
 
 		ul.actions.stacked {
 			-moz-flex-direction: column;
@@ -4147,3 +4166,4 @@ input, select, textarea {
 		}
 
 	}
+
