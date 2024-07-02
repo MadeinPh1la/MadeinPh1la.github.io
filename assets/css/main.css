@@ -4167,3 +4167,37 @@ input, select, textarea {
 
 	}
 
+.press-section {
+    padding: 1rem;
+}
+
+.press-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.press-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.press-list .icon {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.press-list a {
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .press-list li {
+        flex-direction: column;
+    }
+    
+    .press-list .icon {
+        margin-bottom: 0.5rem;
+    }
+}
+
