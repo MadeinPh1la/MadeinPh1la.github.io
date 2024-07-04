@@ -4285,14 +4285,55 @@ input, select, textarea {
         flex-direction: column;
     }
 
-    .spotlight .image {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 1rem;
-    }
 
     .spotlight .content {
         width: 100%;
         padding: 1rem;
     }
+}
+
+.content .icons .labeled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content .icons .labeled li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.content .icons .labeled .icon {
+    font-size: 1.2em;
+    margin-right: 15px;
+    flex-shrink: 0;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Remove the background color */
+    /* background-color: rgba(0,0,0,0.05); */
+    /* Remove the border-radius */
+    /* border-radius: 50%; */
+}
+
+.content .icons .labeled .label {
+    flex: 1;
+    padding-top: 0.2em;
+}
+
+.content .icons .labeled a {
+    display: inline-block;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+/* Ensure no inherited padding or margins are affecting the layout */
+.content .icons,
+.content .icons ul,
+.content .icons li {
+    padding: 0;
+    margin: 0;
 }
