@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 
+
 /*
 	Fractal by HTML5 UP
 	html5up.net | @ajlkn
@@ -4201,3 +4202,31 @@ input, select, textarea {
     }
 }
 
+.spotlight .content .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.spotlight .content .button-group li {
+    margin: 0;
+}
+
+@media (max-width: 736px) {
+    .spotlight .content .button-group {
+        justify-content: center;
+    }
+    
+    .spotlight .content .button-group li {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .spotlight .content .button-group li a {
+        width: 100%;
+        text-align: center;
+    }
+}
+ul.icon {
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands', sans-serif;
+}
